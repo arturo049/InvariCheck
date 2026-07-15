@@ -1,0 +1,7 @@
+invaricheck
+*.o
+*.out
+test_input.txt
+test_output.txt
+historial_*.txt
+*.txt.bak

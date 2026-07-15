@@ -1,0 +1,38 @@
+==================================================
+ INVARICHECK - REPORTE DE EJECUCION Y VERIFICACION
+==================================================
+Estructura: PILA
+Generado  : 2026-07-15 04:03:27
+Invariantes definidos:
+  - TAMANIO <= 3
+  - TODOS_POSITIVOS
+--------------------------------------------------
+
+[#1] 2026-07-15 03:37:48
+Operacion: Estado inicial (estructura creada, sin operaciones)
+Estado resultante: []
+Resultados de verificacion:
+   - TAMANIO <= 3 : CUMPLIDA
+   - TODOS_POSITIVOS : CUMPLIDA
+Resultado global: OK
+
+[#2] 2026-07-15 03:50:28
+Operacion: INSERTAR 5
+Estado resultante: [5]
+Resultados de verificacion:
+   - TAMANIO <= 3 : CUMPLIDA
+   - TODOS_POSITIVOS : CUMPLIDA
+Resultado global: OK
+
+[#3] 2026-07-15 04:00:27
+Operacion: INSERTAR -1
+Estado resultante: [5, -1]
+Resultados de verificacion:
+   - TAMANIO <= 3 : CUMPLIDA
+   - TODOS_POSITIVOS : VIOLADA
+Resultado global: VIOLACION DETECTADA
+
+--------------------------------------------------
+PRIMERA VIOLACION DETECTADA EN: [#3] 2026-07-15 04:00:27
+Operacion causante: INSERTAR -1
+==================================================

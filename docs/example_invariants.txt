@@ -1,0 +1,20 @@
+# Ejemplos de conjuntos de invariantes para InvariCheck
+# (cada bloque se puede copiar y pegar línea por línea al definir invariantes)
+
+## Pila acotada de enteros positivos
+SIZE <= 5
+ALL_POSITIVE
+MAX_VALUE <= 1000
+
+## Cola FIFO que nunca debe quedar vacía y sin duplicados
+NOT_EMPTY
+NO_DUPLICATES
+SIZE <= 10
+
+## Lista ordenada ascendentemente, sin negativos
+SORTED_ASC
+MIN_VALUE >= 0
+
+## Lista ordenada descendentemente con tamaño fijo
+SORTED_DESC
+SIZE == 4
